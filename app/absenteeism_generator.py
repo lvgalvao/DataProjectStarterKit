@@ -1,8 +1,9 @@
 # absenteeism_generator.py
 
-from faker import Faker
-import pandas as pd
 import random
+
+import pandas as pd
+from faker import Faker
 
 
 def generate_absenteeism_data():

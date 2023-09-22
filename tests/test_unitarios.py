@@ -1,7 +1,9 @@
-import pytest
-import pandas as pd
 import os
-from app.consolidador import extract, transform, load
+
+import pandas as pd
+import pytest
+
+from app.consolidador import extract, load, transform
 
 # Sample data for testing
 df1 = pd.DataFrame({'A': [1, 2, 3], 'B': ['a', 'b', 'c']})

@@ -1,8 +1,8 @@
-import pandas as pd
-import os
 import glob
-
+import os
 import sys
+
+import pandas as pd
 
 print(sys.executable)
 

@@ -1,10 +1,11 @@
-import pytest
-import pandas as pd
 import os
-from app.consolidador import extract, transform, load, consolidate_excels
-
-import tempfile
 import shutil
+import tempfile
+
+import pandas as pd
+import pytest
+
+from app.consolidador import consolidate_excels, extract, load, transform
 
 
 def test_integration():
