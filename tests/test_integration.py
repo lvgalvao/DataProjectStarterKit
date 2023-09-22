@@ -5,9 +5,8 @@ import shutil
 import tempfile
 
 import pandas as pd
-import pytest
 
-from app.consolidador import consolidate_excels, extract, load, transform
+from app.ETL import pipeline_completa
 
 
 def test_integration():
@@ -31,7 +30,7 @@ def test_integration():
         sample_data.to_excel(sample_file_path, index=False)
 
         # Executar a função consolidate_excels
-        consolidate_excels(input_folder, output_folder, "consolidated.xlsx")
+        pipeline_completa(input_folder, output_folder, "consolidated.xlsx")
 
         # Verificar se o arquivo de saída existe e tem o conteúdo esperado
         output_file_path = os.path.join(output_folder, "consolidated.xlsx")

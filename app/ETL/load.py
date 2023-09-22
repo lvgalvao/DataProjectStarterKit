@@ -3,7 +3,7 @@
 import os
 
 
-def load(df, output_folder, output_file_name):
+def load_em_um_novo_excel(df, output_folder, output_file_name):
     """
     Carga: Salva um DataFrame em um arquivo Excel.
 

@@ -6,7 +6,7 @@ import os
 import pandas as pd
 
 
-def extract(input_folder):
+def extract_excel(input_folder):
     """
     função para extrair dados de arquivos Excel.
 

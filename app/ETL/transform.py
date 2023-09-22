@@ -3,7 +3,7 @@
 import pandas as pd
 
 
-def transform(all_data):
+def transforma_em_um_unico(all_data):
     """
     função para consolidar os dados de arquivos Excel.
 

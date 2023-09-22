@@ -18,6 +18,10 @@ mkdocstrings = "^0.23.0"
 pip-audit = "^2.6.1"
 
 
+[tool.isort]
+profile = "black"
+known_third_party = []
+
 [tool.poetry.group.dev.dependencies]
 mkdocs = "^1.5.3"
 

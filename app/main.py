@@ -2,7 +2,7 @@
 
 import os
 
-from ETL import pipeline
+from ETL import pipeline_completa
 from utils import generate_absenteeism_data
 
 
@@ -19,7 +19,7 @@ def consolidate_files():
     input_folder = "data"
     output_folder = "consolidado"
     output_file_name = "consolidated_absenteeism_data.xlsx"
-    pipeline(input_folder, output_folder, output_file_name)
+    pipeline_completa(input_folder, output_folder, output_file_name)
 
 
 if __name__ == "__main__":
