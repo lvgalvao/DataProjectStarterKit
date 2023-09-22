@@ -2,8 +2,8 @@
 
 import os
 
-from absenteeism_generator import generate_absenteeism_data
-from consolidador import consolidate_excels
+from ETL import pipeline
+from utils import generate_absenteeism_data
 
 
 def generate_excel_files(files: int = 10):
@@ -19,7 +19,7 @@ def consolidate_files():
     input_folder = "data"
     output_folder = "consolidado"
     output_file_name = "consolidated_absenteeism_data.xlsx"
-    consolidate_excels(input_folder, output_folder, output_file_name)
+    pipeline(input_folder, output_folder, output_file_name)
 
 
 if __name__ == "__main__":
