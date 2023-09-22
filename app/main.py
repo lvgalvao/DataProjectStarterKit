@@ -2,7 +2,6 @@
 
 import os
 
-import pandas as pd
 from absenteeism_generator import generate_absenteeism_data
 from consolidador import consolidate_excels
 
