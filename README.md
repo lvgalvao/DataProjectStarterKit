@@ -53,17 +53,6 @@ poetry shell
 ```bash
 pytest
 ```
-
-## Contribuindo
-
-Contribuições são o que tornam a comunidade de código aberto tão incrível. Qualquer contribuição que você fizer será **muito apreciada**. Para contribuir:
-
-1. Faça o Fork do projeto
-2. Crie sua Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Faça o Commit das suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a Branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
 ## Contato
 
 Para dúvidas, sugestões ou feedbacks:
