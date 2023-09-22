@@ -14,6 +14,7 @@ openpyxl = "^3.1.2"
 isort = "^5.12.0"
 pre-commit = "^3.4.0"
 black = "^23.9.1"
+mkdocstrings = "^0.23.0"
 
 
 [tool.poetry.group.dev.dependencies]
