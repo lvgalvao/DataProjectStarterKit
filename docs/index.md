@@ -1,4 +1,4 @@
-# Bem-vindo à Documentação do Workshop 'Como estruturar um projeto do Zero'
+# Doc 'Como estruturar um projeto do Zero'
 
 Este é um projeto exemplo dedicado a demonstrar práticas de refatoração. Neste espaço, você encontrará uma descrição aprofundada da ETL, instruções para instalação, respostas a perguntas frequentes e mais. Seja você um colaborador ou simplesmente alguém com interesse no projeto, esperamos que esta documentação lhe seja útil.
 
@@ -6,11 +6,12 @@ Além disso, esta documentação pode ser integrada ao Confluence ou a uma intra
 
 ## Seções
 
-* [Introdução](#introdu%C3%A7%C3%A3o)
-* [Guia de Instalação](#guia-de-instala%C3%A7%C3%A3o)
-* [API](api.md)
-* [FAQ](#faq)
-* [Contato](#contato)
+- [Doc 'Como estruturar um projeto do Zero'](#doc-como-estruturar-um-projeto-do-zero)
+  - [Seções](#seções)
+  - [Introdução](#introdução)
+  - [Guia de Instalação](#guia-de-instalação)
+  - [FAQ](#faq)
+  - [Contato](#contato)
 
 ## Introdução
 
