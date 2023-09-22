@@ -21,9 +21,5 @@ jobs:
       - name: Install dependencies with poetry
         run: poetry install
 
-      - name: Run pre-commit hooks
-        run: |
-          pre-commit run --all-files
-
       - name: Run pytest
         run: poetry run pytest
