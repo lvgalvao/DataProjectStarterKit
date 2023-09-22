@@ -1,0 +1,29 @@
+name: CI Workflow
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+
+      - name: Install poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+
+      - name: Install dependencies with poetry
+        run: poetry install
+
+      - name: Run pre-commit hooks
+        run: |
+          pre-commit run --all-files
+
+      - name: Run pytest
+        run: poetry run pytest
