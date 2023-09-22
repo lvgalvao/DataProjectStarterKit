@@ -1,17 +1,27 @@
-# Welcome to MkDocs
+# Bem-vindo à Documentação do Meu Projeto
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Aqui você encontrará uma visão geral e detalhada da API do nosso projeto e outras informações pertinentes.
 
-## Commands
+## Seções
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [Introdução](#)
+- [Guia de instalação](#)
+- [API](api.md)
+- [FAQ](#)
+- [Contato](#)
 
-## Project layout
+## Introdução
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Fale um pouco sobre seu projeto aqui.
+
+## Guia de Instalação
+
+Instruções detalhadas sobre como instalar e configurar seu projeto.
+
+## FAQ
+
+Respostas para perguntas frequentes.
+
+## Contato
+
+Informações de contato e como obter suporte.
