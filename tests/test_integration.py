@@ -6,6 +6,7 @@ from app.consolidador import extract, transform, load, consolidate_excels
 import tempfile
 import shutil
 
+
 def test_integration():
     # Criar uma pasta temporária para simular o ambiente real
     with tempfile.TemporaryDirectory() as tmpdirname:
@@ -16,10 +17,9 @@ def test_integration():
         os.makedirs(input_folder)
 
         # Criar um arquivo Excel real para teste
-        sample_data = pd.DataFrame({
-            'A': list(range(1, 11)),
-            'B': list('abcdefghij')
-        })
+        sample_data = pd.DataFrame(
+            {'A': list(range(1, 11)), 'B': list('abcdefghij')}
+        )
         sample_file_path = os.path.join(input_folder, 'sample.xlsx')
         sample_data.to_excel(sample_file_path, index=False)
 
