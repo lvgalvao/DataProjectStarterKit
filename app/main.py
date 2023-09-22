@@ -10,7 +10,7 @@ def generate_excel_files(files: int = 10):
     for i in range(files):
         df = generate_absenteeism_data()
         output_path = os.path.join("data", f"absenteeism_data_{i}.xlsx")
-        df.to_excel(output_path, index=False, engine='openpyxl')
+        df.to_excel(output_path, index=False)
 
 def consolidate_files():
     """Consolida os arquivos Excel gerados em um único arquivo."""

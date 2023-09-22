@@ -2,23 +2,35 @@ import pandas as pd
 import os
 import glob
 
-def consolidate_excels(input_folder, output_folder, output_file_name):
+import sys
+print(sys.executable)
+
+def extract(input_folder):
+    files = glob.glob(os.path.join(input_folder, "*.xlsx"))
+    if not files:
+        raise ValueError("No Excel files found in the specified folder")
+    all_data = [pd.read_excel(file) for file in files]
+    return all_data
+
+def transform(all_data):
+    if not all_data:
+        raise ValueError("No data to transform")
+    consolidated_df = pd.concat(all_data, axis=0, ignore_index=True)
+    return consolidated_df
+
+def load(df, output_folder, output_file_name):
     """
-    Consolida todos os arquivos Excel em uma pasta em um único arquivo Excel.
+    Carga: Salva um DataFrame em um arquivo Excel.
     """
-    
-    # Garantir que a pasta de saída exista
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     
-    # Lista de arquivos Excel na pasta input_folder
-    files = glob.glob(os.path.join(input_folder, "*.xlsx"))
+    df.to_excel(os.path.join(output_folder, output_file_name), index=False)  # Retirado engine='openpyxl'
 
-    # Lendo todos os arquivos Excel em uma lista de DataFrames
-    all_data = [pd.read_excel(file, engine='openpyxl') for file in files]
-
-    # Concatenando todos os DataFrames em um único DataFrame
-    consolidated_df = pd.concat(all_data, axis=0, ignore_index=True)
-
-    # Salvando o DataFrame consolidado em um arquivo Excel
-    consolidated_df.to_excel(os.path.join(output_folder, output_file_name), index=False, engine='openpyxl')
+def consolidate_excels(input_folder, output_folder, output_file_name):
+    """
+    Função ETL: Extrai, Transforma e Carrega dados de arquivos Excel.
+    """
+    data = extract(input_folder)
+    consolidated_df = transform(data)
+    load(consolidated_df, output_folder, output_file_name)
