@@ -54,13 +54,13 @@ poetry shell
 make test
 ```
 
-1. Execute o comando para ver a documentação do projeto:
+5. Execute o comando para ver a documentação do projeto:
 
 ```bash
-make docs
+make doc
 ```
 
-6. Execute o comando de execucão da pipeline:
+6. Execute o comando de execucão da pipeline para realizar a ETL:
 
 ```bash
 make run
