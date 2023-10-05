@@ -51,8 +51,17 @@ poetry shell
 4. Execute os testes para garantir que tudo está funcionando como esperado:
 
 ```bash
-pytest
+pytest -v
 ```
+
+5. Execute o comando de execucão da pipeline:
+
+```bash
+make run
+```
+
+6. Verifique na pasta data/output se o arquivo foi gerado corretamente.
+
 ## Contato
 
 Para dúvidas, sugestões ou feedbacks:
