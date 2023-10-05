@@ -5,3 +5,5 @@ format:
 	black .
 test:
 	pytest -v
+run:
+	python3 app/main.py
