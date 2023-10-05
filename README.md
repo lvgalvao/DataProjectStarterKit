@@ -39,6 +39,11 @@ Este repositório é uma parte integrante do workshop "Como estruturar um projet
 
 * **Poetry**: Este projeto utiliza Poetry para gerenciamento de dependências. [Instruções de instalação do Poetry aqui](https://python-poetry.org/docs/#installation).Se você é usuário Windows, recomendo assistir esse vídeo: [Youtube](https://www.youtube.com/watch?v=BuepZYn1xT8). Que instala o Python, Poetry e VSCode. Mas um simples comando PIP INSTALL POETRY já resolve.
 
+Sugestão de leituras.
+[Ebook 1 - Testes](https://www.linkedin.com/feed/update/urn:li:activity:7099722252144848896/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7099722252144848896%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&originTrackingId=hg1%2BufBeTLClrS%2BJixGEoA%3D%3D)
+[Ebook 2 - Github Actions](https://www.linkedin.com/feed/update/urn:li:activity:7098264928553201665/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7098264928553201665%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&originTrackingId=%2BFcdPRcDT62iNieFV3Yc%2Fg%3D%3D)
+[Ebook 3 - Na minha máquina funciona](https://www.linkedin.com/feed/update/urn:li:activity:7095419109449814017/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7095419109449814017%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&originTrackingId=7ShpQeNCQuCDErI%2BAzEBXw%3D%3D)
+
 ### Instalação e Configuração
 
 1. Clone o repositório:
