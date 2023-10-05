@@ -25,7 +25,15 @@ Este repositório é uma parte integrante do workshop "Como estruturar um projet
 
 ### Pré-requisitos
 
-Você deve ter o Python instalado em sua máquina. Este projeto foi desenvolvido utilizando Python 3.11, mas é compatível com versões desde a 3.11 até a 3.13.
+### Pré-requisitos
+
+* **Python**: Você deve ter o Python instalado em sua máquina. Este projeto foi desenvolvido utilizando Python 3.11.3, mas caso não tenha ele irá baixar automaticamente usando o Pyenv
+    
+* **Makefile**: Este projeto utiliza um Makefile para automatizar várias tarefas. Certifique-se de ter `make` instalado em sua máquina.
+    
+* **Pyenv**: É usado para gerenciar versões do Python. Se você não tiver a versão correta do Python instalada, o Makefile tentará usar o Pyenv para instalá-la. [Instruções de instalação do Pyenv aqui](https://github.com/pyenv/pyenv#installation).
+    
+* **Poetry**: Este projeto utiliza Poetry para gerenciamento de dependências. [Instruções de instalação do Poetry aqui](https://python-poetry.org/docs/#installation).
 
 ### Instalação e Configuração
 
@@ -36,37 +44,44 @@ git clone https://github.com/lvgalvao/dataprojectstarterkit.git
 cd dataprojectstarterkit
 ```
 
-2. Instale as dependências do projeto usando [Poetry](https://python-poetry.org/docs/):
+2. Configure a versão correta do Python com `pyenv`:
+
+```bash
+pyenv install 3.11.3
+pyenv local 3.11.3
+```
+
+3. Instale as dependências do projeto:
 
 ```bash
 poetry install
 ```
 
-3. Ative o ambiente virtual:
+4. Ative o ambiente virtual:
 
 ```bash
 poetry shell
 ```
 
-4. Execute os testes para garantir que tudo está funcionando como esperado:
+5. Execute os testes para garantir que tudo está funcionando como esperado:
 
 ```bash
-make test
+task test
 ```
 
-5. Execute o comando para ver a documentação do projeto:
+6. Execute o comando para ver a documentação do projeto:
 
 ```bash
-make doc
+task doc
 ```
 
-6. Execute o comando de execucão da pipeline para realizar a ETL:
+7. Execute o comando de execucão da pipeline para realizar a ETL:
 
 ```bash
-make run
+task run
 ```
 
-7. Verifique na pasta data/output se o arquivo foi gerado corretamente.
+8. Verifique na pasta data/output se o arquivo foi gerado corretamente.
 
 ## Contato
 
