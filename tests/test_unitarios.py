@@ -37,7 +37,7 @@ def mock_output_folder(tmpdir):
 def test_extract(mock_input_folder):
     """Test the extraction of data from the input folder."""
     extracted_data = extract_excel(mock_input_folder)
-    assert len(extracted_data) == 2  # Expecting two DataFrames
+    assert len(extracted_data) == 3  # Expecting two DataFrames
     assert all(isinstance(df, pd.DataFrame) for df in extracted_data)
 
 

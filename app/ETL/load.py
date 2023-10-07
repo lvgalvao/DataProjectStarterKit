@@ -12,6 +12,6 @@ def load_em_um_novo_excel(df, output_folder, output_file_name):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    df.to_excel(
-        os.path.join(output_folder, output_file_name), index=False
+    df.to_parquet(
+        os.path.join(output_folder, output_file_name), index=True
     )  # Retirado engine='openpyxl'
