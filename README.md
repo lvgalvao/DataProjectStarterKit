@@ -56,8 +56,8 @@ cd dataprojectstarterkit
 2. Configure a versão correta do Python com `pyenv`:
 
 ```bash
-pyenv install 3.11.3
-pyenv local 3.11.3
+pyenv install 3.11.5
+pyenv local 3.11.5
 ```
 
 3. Instale as dependências do projeto:

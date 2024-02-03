@@ -6,7 +6,7 @@ authors = ["Luciano Filho <lvgalvaofilho@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "=3.11.3"
+python = "3.11.5"
 faker = "^19.6.2"
 pandas = "^2.1.1"
 pytest = "^7.4.2"
