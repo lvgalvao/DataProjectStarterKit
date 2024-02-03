@@ -60,9 +60,10 @@ pyenv install 3.11.5
 pyenv local 3.11.5
 ```
 
-3. Instale as dependências do projeto:
+3. Instale as dependências do projeto e configurar poetry para Python version 3.11.5:
 
 ```bash
+poetry env use 3.11.5
 poetry install
 ```
 
