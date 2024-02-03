@@ -60,17 +60,17 @@ pyenv install 3.11.5
 pyenv local 3.11.5
 ```
 
-3. Instale as dependências do projeto e configurar poetry para Python version 3.11.5:
+3. Configurar poetry para Python version 3.11.5 e ative o ambiente virtual:
 
 ```bash
 poetry env use 3.11.5
-poetry install
+poetry shell
 ```
 
-4. Ative o ambiente virtual:
+4. Instale as dependencias do projeto:
 
 ```bash
-poetry shell
+poetry install
 ```
 
 5. Execute os testes para garantir que tudo está funcionando como esperado:
