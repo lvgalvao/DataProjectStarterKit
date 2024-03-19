@@ -1,6 +1,5 @@
 """modulo que gera dados de exemplo para testes."""
 
-
 import random
 
 import pandas as pd
