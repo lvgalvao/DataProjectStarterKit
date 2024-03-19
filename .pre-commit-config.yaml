@@ -22,7 +22,8 @@ repos:
     hooks:
       - id: pydocstyle
 
-  - repo: local
+  - repo: https://github.com/pypa/pip-audit
+    rev: v2.7.2
     hooks:
       - id: pip-audit
         name: pip-audit
@@ -31,3 +32,7 @@ repos:
         language: system
         pass_filenames: false
         types: [python] # Opcional: se você quiser que isso seja executado apenas quando arquivos Python forem alterados.
+ci:
+  # Leave pip-audit to only run locally and not in CI
+  # pre-commit.ci does not allow network calls
+  skip: [pip-audit]
