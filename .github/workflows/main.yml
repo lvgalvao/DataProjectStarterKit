@@ -21,5 +21,8 @@ jobs:
       - name: Install Dependencies
         run: poetry install
 
+      - name: Lintting and Formmating Test
+        uses: pre-commit/action@v3.0.1
+
       - name: Run pytest
         run: poetry run pytest
