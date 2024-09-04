@@ -25,4 +25,4 @@ def consolidate_files():
 if __name__ == "__main__":
     generate_excel_files(50)
     consolidate_files()
-    print("hello!")
+    print("estamos ao vivo")
