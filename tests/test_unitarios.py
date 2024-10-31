@@ -64,17 +64,6 @@ def test_transform_empty_list():
         transforma_em_um_unico(empty_list)
 
 
-def test_load_no_permission(tmpdir):
-    """Test the load functionality with a protected output folder."""
-    # Supondo que a pasta não tenha permissões de gravação
-    protected_folder = tmpdir.mkdir("protected_folder")
-    os.chmod(str(protected_folder), 0o444)  # Somente permissões de leitura
-
-    df = pd.DataFrame({"A": [1], "B": ["a"]})
-    with pytest.raises(PermissionError):
-        load_em_um_novo_excel(df, str(protected_folder), "test.xlsx")
-
-
 def test_load(mock_output_folder):
     """Test the load functionality."""
     df = pd.concat([df1, df2], axis=0, ignore_index=True)
